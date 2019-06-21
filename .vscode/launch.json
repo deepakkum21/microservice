@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RatingsDataServiceApplication",
+            "request": "launch",
+            "mainClass": "com.deepak.microservices.ratingsdataservice.RatingsDataServiceApplication",
+            "projectName": "ratings-data-service"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MovieInfoServiceApplication",
+            "request": "launch",
+            "mainClass": "com.deepak.microservices.movieinfoservice.MovieInfoServiceApplication",
+            "projectName": "movie-info-service"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MovieCatalogServiceApplication",
+            "request": "launch",
+            "mainClass": "com.deepak.microservices.moviecatalogservice.MovieCatalogServiceApplication",
+            "projectName": "movie-catalog-service"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DiscoveryServerApplication",
+            "request": "launch",
+            "mainClass": "com.deepak.microservices.discoveryserver.DiscoveryServerApplication",
+            "projectName": "discovery-server"
+        }
+    ]
+}
