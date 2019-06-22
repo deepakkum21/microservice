@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StudentServiceApplication",
+            "request": "launch",
+            "mainClass": "com.deepak.example.StudentServiceApplication",
+            "projectName": "StudentService"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EurekaServerApplication",
+            "request": "launch",
+            "mainClass": "com.deepak.example.EurekaServerApplication",
+            "projectName": "EurekaServer"
+        }
+    ]
+}
