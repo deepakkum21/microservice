@@ -1,2 +1,2 @@
 # microserviceDemo
-CRUD operation having micro-service using angular
+Microservice concept with different flavour
