@@ -1,0 +1,59 @@
+---
+info:
+  component: Default Single Swagger Document Server for MicroService
+
+spring:
+  profiles: default
+
+server:
+  port: 8014
+
+documentation: 
+  baseurl: http://localhost
+  swagger: 
+    services:   
+      - 
+        name: MOVIE-CATALOG-SERVICE
+        url: ${documentation.baseurl}:8081/v2/api-docs
+        version: 2.0
+      - 
+        name: MOVIE-INFO-SERVICE
+        url: ${documentation.baseurl}:8082/v2/api-docs
+        version: 2.0
+      - 
+        name: RATINGS-DATA-SERVICE
+        url: ${documentation.baseurl}:8083/v2/api-docs
+        version: 2.0
+  
+#Ribbon is auto integrated with Zuul and for this exercise we are not using that.
+#ribbon:
+#  eureka:
+#    enabled: true
+    
+#Zuul routes. Here for /student path, we are routing to localhost:8090 with extra path after that.
+zuul:
+  routes:
+    movie-catalog-service:
+      serviceId: MOVIE-CATALOG-SERVICE
+      path : /mcs/**
+      url: http://localhost:8081    # when eureka is not added  
+    movie-info-service:
+      serviceId: MOVIE-INFO-SERVICE
+      path : /mis/**
+      url: http://localhost:8082
+    ratings-data-service:
+      serviceId: RATINGS-DATA-SERVICE
+      path: /rds/**
+      url: http://localhost:8083
+      
+
+#If using eureka need to 
+#zuul.routes.student.url: http://localhost:8090
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka
+
+
+ 
+    

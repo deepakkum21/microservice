@@ -1,0 +1,5 @@
+documentation\single\swagger\SwaggerServicesConfig.class
+documentation\single\swagger\MsDocumentationApplication.class
+documentation\single\swagger\SwaggerServicesConfig$SwaggerServices.class
+documentation\single\swagger\GatewaySwaggerResourceProvider.class
+META-INF\spring-configuration-metadata.json

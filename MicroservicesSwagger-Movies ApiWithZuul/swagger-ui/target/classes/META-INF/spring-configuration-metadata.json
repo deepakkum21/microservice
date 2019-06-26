@@ -1,0 +1,37 @@
+{
+  "groups": [
+    {
+      "name": "documentation.swagger",
+      "type": "documentation.single.swagger.SwaggerServicesConfig",
+      "sourceType": "documentation.single.swagger.SwaggerServicesConfig"
+    },
+    {
+      "name": "documentation.swagger.services",
+      "type": "documentation.single.swagger.SwaggerServicesConfig$SwaggerServices",
+      "sourceType": "documentation.single.swagger.SwaggerServicesConfig$SwaggerServices"
+    }
+  ],
+  "properties": [
+    {
+      "name": "documentation.swagger.services",
+      "type": "java.util.List<documentation.single.swagger.SwaggerServicesConfig$SwaggerServices>",
+      "sourceType": "documentation.single.swagger.SwaggerServicesConfig"
+    },
+    {
+      "name": "documentation.swagger.services.name",
+      "type": "java.lang.String",
+      "sourceType": "documentation.single.swagger.SwaggerServicesConfig$SwaggerServices"
+    },
+    {
+      "name": "documentation.swagger.services.url",
+      "type": "java.lang.String",
+      "sourceType": "documentation.single.swagger.SwaggerServicesConfig$SwaggerServices"
+    },
+    {
+      "name": "documentation.swagger.services.version",
+      "type": "java.lang.String",
+      "sourceType": "documentation.single.swagger.SwaggerServicesConfig$SwaggerServices"
+    }
+  ],
+  "hints": []
+}
