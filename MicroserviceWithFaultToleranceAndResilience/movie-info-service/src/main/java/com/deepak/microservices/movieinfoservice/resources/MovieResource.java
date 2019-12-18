@@ -13,7 +13,9 @@ public class MovieResource {
 	
 	@GetMapping("/{movieId}")
 	public Movie getMovieInfo(@PathVariable("movieId") String movieId) {
-		return new Movie("1", "Luka chupi");
+		String[] moviesArray = new String []{"Luka chupi", "Avengers", "Black Window", "Spies In Disguies", "SpiderMan", "Iron Man", "Thor", "Dr. Strange", "Star Wars", "Fast & furious"};
+		int x = (int)(Math.random()*(10));
+		return new Movie(movieId, moviesArray[x]);
 	}
 
 }

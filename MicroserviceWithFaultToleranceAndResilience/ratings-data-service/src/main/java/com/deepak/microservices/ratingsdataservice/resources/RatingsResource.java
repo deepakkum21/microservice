@@ -22,8 +22,10 @@ public class RatingsResource {
 	
 	@GetMapping("/users/{userId}")
 	public UserRating getUserRating(@PathVariable("userId") String userId) {
+		int randomRating = (int)(Math.random()*(6));
+		int randomUserid = (int)(Math.random()*(10));
 		UserRating userRating = new UserRating();
-		List<Rating> ratingList = Arrays.asList(new Rating("1",1));
+		List<Rating> ratingList = Arrays.asList(new Rating(Integer.toString(randomUserid),randomRating));
 		userRating.setUserRating(ratingList);
 		return userRating;
 	}
